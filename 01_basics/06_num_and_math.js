@@ -53,3 +53,7 @@ const max = 20;
 console.log(Math.floor(Math.random() * (max - min + 1)) + min);
 
 //  L === 12
+
+console.log(typeof NaN); // NUMBER
+console.log( NaN === NaN);// any string can b ecompared thus FALSE
+
