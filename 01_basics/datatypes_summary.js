@@ -88,3 +88,46 @@ const myFunction = function(){
 // console.log(typeof(myFunction)); // function
 // functionhe return krta hai , but we call it as
 //  "function object"
+
+
+// refernce
+// https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//  STACK AND HEAP MEMORY IN JAVASCRIPT
+
+// STACK ==> PRIMITIVE DATATYPES
+    // jo bhi variable declare kiya hai , uske hame ek copy milte hai
+
+
+// HEAP ==> NON-PRIMITIVE DATATYPES or Reference
+    // here we get the reference of the original value, jo bhi chnages karenge  wo original value mei hoga
+
+let myname1 = "ram"
+let anothername = myname1
+anothername = "shree ram"
+
+
+// console.log(anothername);
+// console.log(myname1);
+
+// ---------------------------
+
+let userOne = {
+    email : "user@gmail.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "ram.@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+
+
+
